@@ -1,8 +1,7 @@
 import cpp
 
-from Function func, FunctionCall call, Macro macro
+from MacroInvocation mi
 
-where macro.getName() in ["ntohs", "ntohl", "ntohll"] 
-    and call.getTarget() = func
+where mi.getMacro().getName() in ["ntohs", "ntohl", "ntohll"]
 
-select call
+select mi
