@@ -2,6 +2,6 @@ import cpp
 
 from Function f
 
-where f.getName() = "strncmp"
+where f.getName() = "strlen"
 
-select f, "a function named strncmp"
+select f, "a function named strlen"
